@@ -1,48 +1,43 @@
-/* Contenido de la página */
+/* Contenido de la página - Quiénes somos */
+#quienes-somos {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8; /* Fondo ligeramente gris para separar del resto del contenido */
+  }
+  
+  #quienes-somos h2 {
+    color: #ef3240; /* Color rojo del tema */
+  }
+  
+  #quienes-somos p {
+    color: #555; /* Color de texto más oscuro para mayor legibilidad */
+    font-size: 18px; /* Tamaño de fuente un poco más grande */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+  }
+  
+  #quienes-somos section {
+    margin-bottom: 40px;
+  }
+  
+  #quienes-somos h3 {
+    color: #ef3240; /* Color rojo del tema para los títulos de sección */
+  }
+  
+  #quienes-somos img {
+    max-width: 10%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sutil sombra para resaltar la imagen */
+    display: block; /* Ajusta la imagen para que sea un elemento de bloque */
+    margin: 10px auto; /* Ajusta el margen para centrar la imagen y dar espacio alrededor */
+  }
+  /* Contenido de la página */
   
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
   }
-    /* Agregamos una división entre el contenido principal y el footer */
-    .container {
-        margin-top: 60px;
-        margin-bottom: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Ocupa toda la altura de la ventana */
-      }
-      .menu-container {
-        max-width: 800px; /* Ajusta el ancho máximo del contenedor del menú según tus necesidades */
-        overflow: hidden;
-      }
-      
-      .menu-image {
-        width: 100%;
-        height: auto;
-        transition: transform 0.5s; /* Agregamos una transición para suavizar el zoom */
-      }
-      
-      .menu-image:hover {
-        transform: scale(1.2); /* Ajusta el nivel de zoom al pasar el mouse sobre la imagen */
-      }
-      /* Carrusel de fotos */
-    .carousel-container {
-        width: 100%;
-        overflow: hidden;
-      }
-      
-      .carousel-slide {
-        display: none;
-      }
-      
-      .carousel-slide img {
-        width: 100%;
-        height: auto;
-      }
-      
   
  /* Navbar styles */
 .navbar {
