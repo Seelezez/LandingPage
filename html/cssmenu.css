@@ -1,0 +1,131 @@
+/* styles.css */
+/* Contenido de la página */
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+    /* Agregamos una división entre el contenido principal y el footer */
+    .container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ocupa toda la altura de la ventana */
+      }
+      .menu-container {
+        max-width: 800px; /* Ajusta el ancho máximo del contenedor del menú según tus necesidades */
+        overflow: hidden;
+      }
+      
+      .menu-image {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s; /* Agregamos una transición para suavizar el zoom */
+      }
+      
+      .menu-image:hover {
+        transform: scale(1.2); /* Ajusta el nivel de zoom al pasar el mouse sobre la imagen */
+      }
+      /* Carrusel de fotos */
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .carousel-slide {
+        display: none;
+      }
+      
+      .carousel-slide img {
+        width: 100%;
+        height: auto;
+      }
+      
+  
+ /* Navbar styles */
+.navbar {
+  background-color: #ef3240;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 50px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-right: 0; /* Elimina el margen derecho fijo */
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+/* Ajustes para hacer que el navbar sea responsivo */
+@media screen and (max-width: 768px) {
+  .logo img {
+    margin-left: 10px; /* Ajusta el margen izquierdo en pantallas más pequeñas */
+  }
+
+  .nav-list {
+    margin-right: 0;
+    flex-grow: 1; /* Ocupa todo el espacio disponible en pantallas más pequeñas */
+    justify-content: flex-end; /* Mueve la lista al final en pantallas más pequeñas */
+  }
+
+  .nav-list li {
+    margin-right: 10px;
+  }
+}
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff; /* Color de los enlaces en el navbar */
+    position: relative; /* Para permitir el posicionamiento del pseudo-elemento */
+  }
+
+  .nav-list a:hover::before {
+    content: ''; /* Pseudo-elemento para el cuadrado */
+    position: absolute;
+    top: -36px;
+    right: -5px;
+    bottom: -36px;
+    left: -5px;
+    background-color: rgba(0, 0, 0, 0.258); /* Color oscuro con transparencia */
+  }
+  
+  
+  /* Footer styles */
+  footer {
+    background-color: #ef3240   ; /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+  }
+  
+  .social-icons img {
+    max-width: 30px;
+  }
+  
